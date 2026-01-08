@@ -15,7 +15,7 @@ const MainContext = () => {
             <ChildB />
             <ChildC />
         </userContext.Provider>
-      
+       
     </div>
   )
 }
