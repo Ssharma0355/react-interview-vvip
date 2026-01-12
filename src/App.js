@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import UseStateHook from './hooks/UseStateHook'
 import MainContext from './hooks/contextapi/MainContext'
+import UserList from './apicalls/UserList'
+import axios from "axios"
 
 const App = () => {
   const[state, setState] = useState(false)
@@ -15,6 +17,11 @@ const App = () => {
 
       <h1>Context API</h1>
       <MainContext />
+
+      <h1>
+        user list
+      </h1>
+      <UserList />
       
     </div>
   )
