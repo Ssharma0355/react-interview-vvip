@@ -5,7 +5,7 @@ import ChildC from '../../childrens/ChildC';
 
 
 const userContext = createContext();
-
+// to deal with prop dealing
 const MainContext = () => {
     
   return (
@@ -15,7 +15,6 @@ const MainContext = () => {
             <ChildB />
             <ChildC />
         </userContext.Provider>
-      
     </div>
   )
 }
