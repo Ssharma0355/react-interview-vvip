@@ -3,6 +3,7 @@ import UseStateHook from './hooks/UseStateHook'
 import MainContext from './hooks/contextapi/MainContext'
 import UserList from './apicalls/UserList'
 import axios from "axios"
+import SearchFeature from './debounce/SearchFeature'
 
 const App = () => {
   const[state, setState] = useState(false)
@@ -12,7 +13,7 @@ const App = () => {
   return (
     <div>
       <h1>Hooks</h1>
-      <p>useState Hook</p>
+      {/* <p>useState Hook</p>
       <UseStateHook />
 
       <h1>Context API</h1>
@@ -21,7 +22,8 @@ const App = () => {
       <h1>
         user list
       </h1>
-      <UserList />
+      <UserList /> */}
+      <SearchFeature />
       
     </div>
   )
