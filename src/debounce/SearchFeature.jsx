@@ -34,7 +34,7 @@ const SearchFeature = () => {
     return (
         <div>
             <input value={searchItem} onChange={(e) => setSearchItem(e.target.value)} />
-            {loading && <p>Searching...</p>}
+            {loading && <p>Searching.....</p>}
             <ul>
                 {results.map(recipe => <li key={recipe.id}>{recipe.name}</li>)}
             </ul>
