@@ -26,7 +26,7 @@ export default class LifeClass extends Component {
       <div>
         {/* <h1>{this.state.count}</h1> */}
         {/* <UpdateClass number={this.state.count}></UpdateClass> */}
-        {/* <UpdateFunc number={this.state.count}  /> */}
+        <UpdateFunc number={this.state.count}  />
         <button onClick={this.increment.bind(this)}>Increment</button>
       </div>
     )
