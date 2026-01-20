@@ -4,6 +4,7 @@ import MainContext from './hooks/contextapi/MainContext'
 import UserList from './apicalls/UserList'
 import axios from "axios"
 import SearchFeature from './debounce/SearchFeature'
+import Life from './lifecyclemethod/Life'
 
 const App = () => {
   const[state, setState] = useState(false)
@@ -24,6 +25,8 @@ const App = () => {
       </h1>
       <UserList /> */}
       <SearchFeature />
+      {/* this is class component */}
+      <Life />
       
     </div>
   )
