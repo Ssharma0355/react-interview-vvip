@@ -5,6 +5,7 @@ import UserList from './apicalls/UserList'
 import axios from "axios"
 import SearchFeature from './debounce/SearchFeature'
 import Life from './lifecyclemethod/Life'
+import LifeClass from './lifecyclerevise/LifeClass'
 
 const App = () => {
   const[state, setState] = useState(false)
@@ -24,9 +25,10 @@ const App = () => {
         user list
       </h1>
       <UserList /> */}
-      <SearchFeature />
+      {/* <SearchFeature /> */}
       {/* this is class component */}
-      <Life />
+      {/* <Life /> */}
+      <LifeClass />
       
     </div>
   )
