@@ -8,7 +8,8 @@ import Life from './lifecyclemethod/Life'
 import LifeClass from './lifecyclerevise/LifeClass'
 
 const App = () => {
-  const[state, setState] = useState(false)
+  const[state, setState] = useState(false);
+  const[lifeComp,setLifeComp] = useState(true);
   const showUseState =()=>{
     setState(!state)
   }
@@ -28,7 +29,8 @@ const App = () => {
       {/* <SearchFeature /> */}
       {/* this is class component */}
       {/* <Life /> */}
-      <LifeClass />
+      {lifeComp ?<LifeClass /> : ""}
+      <button onClick={()=>setLifeComp(!lifeComp)}>unmount button</button>
       
     </div>
   )
