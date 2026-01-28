@@ -6,6 +6,7 @@ import axios from "axios"
 import SearchFeature from './debounce/SearchFeature'
 import Life from './lifecyclemethod/Life'
 import LifeClass from './lifecyclerevise/LifeClass'
+import { Counter } from './typescript/Counter'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -31,7 +32,7 @@ const App = () => {
       {/* <Life /> */}
       {lifeComp ?<LifeClass /> : ""}
       <button onClick={()=>setLifeComp(!lifeComp)}>unmount button</button>
-      
+      <Counter />
     </div>
   )
 }
