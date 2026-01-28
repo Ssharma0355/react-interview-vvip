@@ -7,6 +7,8 @@ import SearchFeature from './debounce/SearchFeature'
 import Life from './lifecyclemethod/Life'
 import LifeClass from './lifecyclerevise/LifeClass'
 import Parent from './context/Parent'
+import ReducerI from './usereducer/ReducerI'
+import Reducer2 from './usereducer/Reducer2'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -33,7 +35,9 @@ const App = () => {
       {/* {lifeComp ?<LifeClass /> : ""}
       <button onClick={()=>setLifeComp(!lifeComp)}>unmount button</button> */}
 
-      <Parent />
+      {/* <Parent /> */}
+      <ReducerI />
+      <Reducer2 />
     </div>
   )
 }
