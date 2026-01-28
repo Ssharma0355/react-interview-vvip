@@ -6,7 +6,7 @@ import axios from "axios"
 import SearchFeature from './debounce/SearchFeature'
 import Life from './lifecyclemethod/Life'
 import LifeClass from './lifecyclerevise/LifeClass'
-import { Counter } from './typescript/Counter'
+import Parent from './context/Parent'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -16,7 +16,7 @@ const App = () => {
   }
   return (
     <div>
-      <h1>Hooks</h1>
+      {/* <h1>Hooks</h1> */}
       {/* <p>useState Hook</p>
       <UseStateHook />
 
@@ -30,9 +30,10 @@ const App = () => {
       {/* <SearchFeature /> */}
       {/* this is class component */}
       {/* <Life /> */}
-      {lifeComp ?<LifeClass /> : ""}
-      <button onClick={()=>setLifeComp(!lifeComp)}>unmount button</button>
-      <Counter />
+      {/* {lifeComp ?<LifeClass /> : ""}
+      <button onClick={()=>setLifeComp(!lifeComp)}>unmount button</button> */}
+
+      <Parent />
     </div>
   )
 }

@@ -10,11 +10,11 @@ export default class LifeClass extends Component {
             count:0,
         }
     }
+    componentDidMount(){
+      console.log("Mounting 1st after render")
+  }
     componentWillUnmount(){
         console.log("Component unmount")
-    }
-    componentDidMount(){
-        console.log("Mounting 1st after render")
     }
    
     increment(){
