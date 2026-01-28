@@ -9,6 +9,7 @@ import LifeClass from './lifecyclerevise/LifeClass'
 import Parent from './context/Parent'
 import ReducerI from './usereducer/ReducerI'
 import Reducer2 from './usereducer/Reducer2'
+import Memo from './memo/Memo'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -36,8 +37,9 @@ const App = () => {
       <button onClick={()=>setLifeComp(!lifeComp)}>unmount button</button> */}
 
       {/* <Parent /> */}
-      <ReducerI />
-      <Reducer2 />
+      {/* <ReducerI />
+      <Reducer2 /> */}
+      <Memo />
     </div>
   )
 }
