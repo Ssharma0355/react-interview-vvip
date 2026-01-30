@@ -20,7 +20,6 @@ const Memo = () => {
         <button onClick={()=>{setCount(count+1)}}>Increase Count</button>
         <h1>Calculated Value: {updatedValue}</h1>
         <input type="number" value={input} onChange={(e)=>setInput(e.target.value)} />
-      
     </div>
   )
 }
