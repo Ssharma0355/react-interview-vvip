@@ -13,6 +13,7 @@ import Memo from './memo/Memo'
 import CounterInter from './inteview/CounterInter'
 import BerforeCallBack from './useCallback/BerforeCallBack'
 import WithCallBack from './useCallback/WithCallBack'
+import PlaywithRef from './useRef/PlaywithRef'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -48,7 +49,11 @@ const App = () => {
 
       {/* useCallback */}
       {/* <BerforeCallBack /> */}
-      <WithCallBack />
+      {/* <WithCallBack /> */}
+    
+
+      {/* useRef  */}
+      <PlaywithRef />
 
     </div>
   )
