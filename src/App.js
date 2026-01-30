@@ -14,6 +14,7 @@ import CounterInter from './inteview/CounterInter'
 import BerforeCallBack from './useCallback/BerforeCallBack'
 import WithCallBack from './useCallback/WithCallBack'
 import PlaywithRef from './useRef/PlaywithRef'
+import CountApp from './Redux/CountApp'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -53,8 +54,9 @@ const App = () => {
     
 
       {/* useRef  */}
-      <PlaywithRef />
-
+      {/* <PlaywithRef /> */}
+   
+     <CountApp />
     </div>
   )
 }
