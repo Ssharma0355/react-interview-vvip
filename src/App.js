@@ -10,6 +10,9 @@ import Parent from './context/Parent'
 import ReducerI from './usereducer/ReducerI'
 import Reducer2 from './usereducer/Reducer2'
 import Memo from './memo/Memo'
+import CounterInter from './inteview/CounterInter'
+import BerforeCallBack from './useCallback/BerforeCallBack'
+import WithCallBack from './useCallback/WithCallBack'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -39,7 +42,14 @@ const App = () => {
       {/* <Parent /> */}
       {/* <ReducerI />
       <Reducer2 /> */}
-      <Memo />
+      {/* <Memo /> */}
+      {/* <CounterInter /> */}
+
+
+      {/* useCallback */}
+      {/* <BerforeCallBack /> */}
+      <WithCallBack />
+
     </div>
   )
 }
