@@ -5,16 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import { store } from './Redux/store.js';
+// import ApolloProvider  from "@apollo/client";
+
+// import { ApolloProvider } from 'react-apollo';
+
+import clinet from './GraphQL/apolloClient';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <ApolloProvider client={clinet} > */}
     <Provider store={store}>
     <App />
-
     </Provider>
+    {/* </ApolloProvider> */}
   </React.StrictMode>
 );
 
