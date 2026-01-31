@@ -1,5 +1,6 @@
 import React from 'react'
 import { WithAuth } from './utils/WithAuth'
+import { WithDarkMode } from '../DarkmodewithHOC/WithDarkMode'
 
 const Dashboard = () => {
   return (
@@ -10,7 +11,7 @@ const Dashboard = () => {
 }
 
 // 2nd method to use 
-const AuthDashboard = WithAuth(Dashboard)
+const AuthDashboard = WithDarkMode(WithAuth(Dashboard))
 
 // export default Dashboard
 
