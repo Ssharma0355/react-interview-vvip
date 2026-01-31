@@ -15,6 +15,7 @@ import BerforeCallBack from './useCallback/BerforeCallBack'
 import WithCallBack from './useCallback/WithCallBack'
 import PlaywithRef from './useRef/PlaywithRef'
 import CountApp from './Redux/CountApp'
+import IntegrationPage from './GraphQL/IntegrationPage'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -56,7 +57,11 @@ const App = () => {
       {/* useRef  */}
       {/* <PlaywithRef /> */}
    
-     <CountApp />
+     {/* <CountApp /> */}
+
+
+     {/* grapql  */}
+     {/* <IntegrationPage /> */}
     </div>
   )
 }
