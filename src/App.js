@@ -16,6 +16,7 @@ import WithCallBack from './useCallback/WithCallBack'
 import PlaywithRef from './useRef/PlaywithRef'
 import CountApp from './Redux/CountApp'
 import IntegrationPage from './GraphQL/IntegrationPage'
+import AppFile from './HighOrderComponent/AppFile'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -62,6 +63,10 @@ const App = () => {
 
      {/* grapql  */}
      {/* <IntegrationPage /> */}
+
+
+     {/* High Order Component  */}
+     <AppFile />
     </div>
   )
 }
