@@ -19,6 +19,7 @@ import IntegrationPage from './GraphQL/IntegrationPage'
 import AppFile from './HighOrderComponent/AppFile'
 import UseDark from './DarkmodewithHOC/UseDark'
 import ShowingFile from './LazyLoading/ShowingFile'
+import Custom from './CustomHooks/Custom'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -68,11 +69,16 @@ const App = () => {
 
 
      {/* High Order Component  */}
-     <AppFile />
+     {/* <AppFile /> */}
      {/* <UseDark /> */}
 
      {/* Lazy laoding  */}
-     <ShowingFile />
+     {/* <ShowingFile /> */}
+
+
+
+     {/* custom hook  */}
+     <Custom />
     </div>
   )
 }
