@@ -18,6 +18,7 @@ import CountApp from './Redux/CountApp'
 import IntegrationPage from './GraphQL/IntegrationPage'
 import AppFile from './HighOrderComponent/AppFile'
 import UseDark from './DarkmodewithHOC/UseDark'
+import ShowingFile from './LazyLoading/ShowingFile'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -69,6 +70,9 @@ const App = () => {
      {/* High Order Component  */}
      <AppFile />
      {/* <UseDark /> */}
+
+     {/* Lazy laoding  */}
+     <ShowingFile />
     </div>
   )
 }
