@@ -20,6 +20,7 @@ import AppFile from './HighOrderComponent/AppFile'
 import UseDark from './DarkmodewithHOC/UseDark'
 import ShowingFile from './LazyLoading/ShowingFile'
 import Custom from './CustomHooks/Custom'
+import Parent1 from './Routing/Parent'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -78,7 +79,10 @@ const App = () => {
 
 
      {/* custom hook  */}
-     <Custom />
+     {/* <Custom /> */}
+
+     {/* Routing */}
+     <Parent1 />
     </div>
   )
 }
