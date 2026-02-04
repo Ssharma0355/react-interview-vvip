@@ -22,6 +22,7 @@ import ShowingFile from './LazyLoading/ShowingFile'
 import Custom from './CustomHooks/Custom'
 import Parent1 from './Routing/Parent'
 import AutoSearch from './Machine-coding/Autocomplete-search/AutoSearch'
+import OptimizedSearch from './Machine-coding/practice/OptimizedSearch'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -87,7 +88,8 @@ const App = () => {
      <h1>TO be branch change</h1> */}
 
      {/* auto search machine coding round  */}
-     <AutoSearch />
+     {/* <AutoSearch /> */}
+     <OptimizedSearch />
     </div>
   )
 }
