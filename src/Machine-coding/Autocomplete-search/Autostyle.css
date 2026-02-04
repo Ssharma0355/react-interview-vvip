@@ -1,0 +1,13 @@
+.search-input{
+    width: 500px;
+    padding: 5px;
+}
+.results{
+    border: 1px solid black;
+    width: 500px;
+    padding: 5px;
+}
+.result:hover{
+    background: #b9b5b5;
+    cursor: pointer;
+}
