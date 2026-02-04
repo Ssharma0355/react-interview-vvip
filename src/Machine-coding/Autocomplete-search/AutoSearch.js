@@ -5,19 +5,24 @@ const AutoSearch = () => {
     const [input, setInput] = useState("");
     const [results, setResults] = useState([]);
     const [showResult, setShowResults] = useState(false);
+    const [chache, setCache] = useState({})
 
     const fetchData = async()=>{
+        if(chache[input]){
+            console.log("Chache result",chache[input])
+        }
         const data = await fetch(`https://dummyjson.com/recipes/search?q=${input}`);
         const jsonData = await data.json();
-        setResults(jsonData.recipes)
+        setResults(jsonData?.recipes)
+        setCache(prev => ({...prev,[input]:jsonData?.recipes}))
     }
-    const debounce =()=>{ setTimeout(()=>{
-        fetchData();
-    },3000);
-}
 
+    // Debouncing method for api calls after 4 secs 
     useEffect(()=>{
-        debounce();
+        const timer = setTimeout(fetchData, 400)
+        return ()=>{
+            clearTimeout(timer)
+        }
     },[input]);
 
   return (
