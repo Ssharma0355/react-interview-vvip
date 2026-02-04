@@ -21,6 +21,7 @@ import UseDark from './DarkmodewithHOC/UseDark'
 import ShowingFile from './LazyLoading/ShowingFile'
 import Custom from './CustomHooks/Custom'
 import Parent1 from './Routing/Parent'
+import AutoSearch from './Machine-coding/Autocomplete-search/AutoSearch'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -82,8 +83,11 @@ const App = () => {
      {/* <Custom /> */}
 
      {/* Routing */}
-     <Parent1 />
-     <h1>TO be branch change</h1>
+     {/* <Parent1 />
+     <h1>TO be branch change</h1> */}
+
+     {/* auto search machine coding round  */}
+     <AutoSearch />
     </div>
   )
 }
