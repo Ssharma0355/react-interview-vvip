@@ -23,6 +23,7 @@ import Custom from './CustomHooks/Custom'
 import Parent1 from './Routing/Parent'
 import AutoSearch from './Machine-coding/Autocomplete-search/AutoSearch'
 import OptimizedSearch from './Machine-coding/practice/OptimizedSearch'
+import TodoList from './Machine-coding/todoList/TodoList'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -89,7 +90,8 @@ const App = () => {
 
      {/* auto search machine coding round  */}
      {/* <AutoSearch /> */}
-     <OptimizedSearch />
+     {/* <OptimizedSearch /> */}
+     <TodoList />
     </div>
   )
 }
