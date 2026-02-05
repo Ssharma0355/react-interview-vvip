@@ -20,7 +20,7 @@ const TodoList = () => {
                 if(id === t.id){
                     return{
                         ...t,
-                        completed: !t.completed
+                        completed: !t.completed,
                     }
                 }
                 else return t
