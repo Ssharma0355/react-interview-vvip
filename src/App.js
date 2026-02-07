@@ -25,6 +25,7 @@ import AutoSearch from './Machine-coding/Autocomplete-search/AutoSearch'
 import OptimizedSearch from './Machine-coding/practice/OptimizedSearch'
 import TodoList from './Machine-coding/todoList/TodoList'
 import PracticeTodo from './Machine-coding/todoList/PracticeTodo'
+import AutoPractice from './Machine-coding/Autocomplete-search/AutoPractice'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -93,7 +94,8 @@ const App = () => {
      {/* <AutoSearch /> */}
      {/* <OptimizedSearch /> */}
      {/* <TodoList /> */}
-     <PracticeTodo />
+     {/* <PracticeTodo /> */}
+     <AutoPractice />
     </div>
   )
 }
