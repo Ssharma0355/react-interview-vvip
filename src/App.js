@@ -27,6 +27,7 @@ import TodoList from './Machine-coding/todoList/TodoList'
 import PracticeTodo from './Machine-coding/todoList/PracticeTodo'
 import AutoPractice from './Machine-coding/Autocomplete-search/AutoPractice'
 import GetPeople from './practicerest/GetPeople'
+import Todo from './revise-mc/Todo'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -99,7 +100,9 @@ const App = () => {
      {/* <AutoPractice /> */}
 
      {/* pracitceee */}
-     <GetPeople />
+     {/* <GetPeople /> */}
+
+     <Todo />
     </div>
   )
 }
