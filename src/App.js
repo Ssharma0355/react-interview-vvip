@@ -28,6 +28,7 @@ import PracticeTodo from './Machine-coding/todoList/PracticeTodo'
 import AutoPractice from './Machine-coding/Autocomplete-search/AutoPractice'
 import GetPeople from './practicerest/GetPeople'
 import Todo from './revise-mc/Todo'
+import ParentTraffic from './revise-mc/Trafficlisgt/ParentTraffic'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -102,7 +103,8 @@ const App = () => {
      {/* pracitceee */}
      {/* <GetPeople /> */}
 
-     <Todo />
+     {/* <Todo /> */}
+     <ParentTraffic />
     </div>
   )
 }
