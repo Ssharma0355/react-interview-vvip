@@ -16,9 +16,10 @@ const TraficLight = ({config=[]}) => {
     <div style={
         {
             backgroundColor:"grey",
-            height:"200px",
+            height:"auto",
             width:"200px",
-            border:"12px"
+            border:"12px",
+            padding:"10px"
         }
     }>
         {config.map((light, index)=>(
