@@ -29,6 +29,7 @@ import AutoPractice from './Machine-coding/Autocomplete-search/AutoPractice'
 import GetPeople from './practicerest/GetPeople'
 import Todo from './revise-mc/Todo'
 import ParentTraffic from './revise-mc/Trafficlisgt/ParentTraffic'
+import ParentLight from './revise-mc/practice-again/ParentLight'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -104,7 +105,9 @@ const App = () => {
      {/* <GetPeople /> */}
 
      {/* <Todo /> */}
-     <ParentTraffic />
+     {/* <ParentTraffic /> */}
+
+     <ParentLight />
     </div>
   )
 }
