@@ -30,6 +30,7 @@ import GetPeople from './practicerest/GetPeople'
 import Todo from './revise-mc/Todo'
 import ParentTraffic from './revise-mc/Trafficlisgt/ParentTraffic'
 import ParentLight from './revise-mc/practice-again/ParentLight'
+import DynamicSelect from './dynamic-dropdown/DynamicSelect'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -107,7 +108,10 @@ const App = () => {
      {/* <Todo /> */}
      {/* <ParentTraffic /> */}
 
-     <ParentLight />
+     {/* <ParentLight /> */}
+
+     {/* Dynamic select options dropdown */}
+     <DynamicSelect />
     </div>
   )
 }
