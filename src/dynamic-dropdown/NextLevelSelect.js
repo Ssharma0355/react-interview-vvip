@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import NextLevelSelect from './NextLevelSelect';
 
-const DynamicSelect = () => {
-    const [selectedValue, setSelectedValue] = useState(null)
+const NextLevelSelect = () => {
+    const [selectedValue, setSelectedValue] = useState(null);
+    const [selectedCity, setSelectedCity] = useState(null);
     const countries = [
         {
           name: "India",
@@ -43,10 +43,8 @@ const DynamicSelect = () => {
              ))}
          </select>
         }
-
-        <NextLevelSelect />
     </div>
   )
 }
 
-export default DynamicSelect
+export default NextLevelSelect
