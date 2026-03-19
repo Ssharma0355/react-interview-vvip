@@ -32,6 +32,7 @@ import ParentTraffic from './revise-mc/Trafficlisgt/ParentTraffic'
 import ParentLight from './revise-mc/practice-again/ParentLight'
 import DynamicSelect from './dynamic-dropdown/DynamicSelect'
 import ListUser from './apicalls/ListUser'
+import NewDebounce from './debounce/NewDebounce'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -114,7 +115,9 @@ const App = () => {
      {/* Dynamic select options dropdown */}
      {/* <DynamicSelect /> */}
 
-     <ListUser />
+     {/* <ListUser /> */}
+
+     <NewDebounce />
 
 
     </div>
