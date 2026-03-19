@@ -15,7 +15,7 @@ const ListUser = () => {
         {users.map((user)=>(
             <li key={user.id}>
                 <h1>{user.title}</h1>
-                <p>{user.body}</p>
+                <p className='sold'>{user.body}</p>
                 </li>
         ))}
       
