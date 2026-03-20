@@ -35,6 +35,7 @@ import ListUser from './apicalls/ListUser'
 import NewDebounce from './debounce/NewDebounce'
 import ParentOfModal from './reusablemodal/ParentOfModal'
 import ParentModal from './reusablemodal/practice/parent'
+import ParentDebounce from './debounce/debouncecustom/ParentDebounce'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -123,7 +124,8 @@ const App = () => {
 
      {/* <ParentOfModal /> */}
 
-     <ParentModal />
+     {/* <ParentModal /> */}
+     <ParentDebounce />
 
 
     </div>
