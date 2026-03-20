@@ -34,6 +34,7 @@ import DynamicSelect from './dynamic-dropdown/DynamicSelect'
 import ListUser from './apicalls/ListUser'
 import NewDebounce from './debounce/NewDebounce'
 import ParentOfModal from './reusablemodal/ParentOfModal'
+import ParentModal from './reusablemodal/practice/parent'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -120,7 +121,9 @@ const App = () => {
 
      {/* <NewDebounce /> */}
 
-     <ParentOfModal />
+     {/* <ParentOfModal /> */}
+
+     <ParentModal />
 
 
     </div>
