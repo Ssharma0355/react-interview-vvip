@@ -6,6 +6,7 @@ const useDebounce = (value, delay = 100) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebounceValue(value);
+      console.log("git")
     }, delay);
 
     return () => {
