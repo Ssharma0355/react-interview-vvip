@@ -7,6 +7,8 @@ const useDebounce = (value, delay = 100) => {
     const timer = setTimeout(() => {
       setDebounceValue(value);
       console.log("git")
+      console.log("git")
+
     }, delay);
 
     return () => {
