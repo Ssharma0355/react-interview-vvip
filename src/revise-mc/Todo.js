@@ -18,6 +18,7 @@ const Todo = () => {
         setTodoList(filteredItem)
 
     }
+    
 
   return (
     <div>
