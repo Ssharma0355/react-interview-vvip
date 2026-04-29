@@ -36,6 +36,8 @@ import NewDebounce from './debounce/NewDebounce'
 import ParentOfModal from './reusablemodal/ParentOfModal'
 import ParentModal from './reusablemodal/practice/parent'
 import ParentDebounce from './debounce/debouncecustom/ParentDebounce'
+import Demo from './hooks-in-depth/State'
+import State from './hooks-in-depth/State'
 
 const App = () => {
   const[state, setState] = useState(false);
@@ -125,7 +127,9 @@ const App = () => {
      {/* <ParentOfModal /> */}
 
      {/* <ParentModal /> */}
-     <ParentDebounce />
+     {/* <ParentDebounce /> */}
+
+     <State />
 
 
     </div>
